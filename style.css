@@ -1,0 +1,117 @@
+/* Basic Reset and Font Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+/* Main container to hold the entire page within the viewport */
+.main-container {
+    height: 100vh; /* This is the key: vh stands for Viewport Height */
+    width: 100vw;  /* vw stands for Viewport Width */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Pushes items to the ends */
+    align-items: center; /* Vertically aligns items */
+    padding: 1rem 5%; /* Padding on top/bottom and left/right */
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #007bff; /* A nice blue color */
+}
+
+.navbar ul {
+    list-style: none; /* Removes bullet points */
+    display: flex;
+    gap: 2rem; /* Space between nav items */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #007bff; /* Color change on hover */
+}
+
+.user-name {
+    font-weight: 600;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    flex-grow: 1; /* Allows this section to fill the remaining vertical space */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    padding: 0 5%;
+    overflow: hidden; /* Prevents any accidental overflow */
+}
+
+/* Left Div Styling */
+.hero-left {
+    flex: 1; /* Takes up 50% of the space */
+    padding-right: 2rem;
+}
+
+.hero-left h1 {
+    font-size: 3.5rem; /* Large, impactful heading */
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #1a2c4e;
+}
+
+.hero-left p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 1rem 2rem; /* Generous padding */
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Right Div Styling */
+.hero-right {
+    flex: 1; /* Takes up the other 50% of the space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-right img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto;
+    border-radius: 15px; /* Soft rounded corners for the image */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
